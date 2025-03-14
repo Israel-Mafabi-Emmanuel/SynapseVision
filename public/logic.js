@@ -19,23 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const response     = document.getElementById('explainer-field');
 
-    // function typeWriter(html, element, speed) {
-    //     let tempDiv = document.createElement('div');
-    //     tempDiv.innerHTML = html;
-    //     let text = tempDiv.textContent; // Get the text content
-
-    //     let i = 0;
-    //     function nextChar() {
-    //         if (i < text.length) {
-    //             element.innerHTML += text.charAt(i);
-    //             i++;
-    //             setTimeout(nextChar, speed);
-    //         }
-    //     }
-    //     element.innerHTML = ""; // Clear existing text
-    //     nextChar();
-    // }
-
     function typeWriter(html, element, speed) {
         let wrapper = document.createElement('div');
         wrapper.style.display = 'none'; // Hide the wrapper
