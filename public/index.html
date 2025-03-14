@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynapseVision</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="syn-work-container">
+        <div class="syn-upload-container">
+            <label for="image-upload" class="custom-upload" id="synapse-image-label">
+                <img src="assets/synapse-picture.svg" alt="synapse-image" class="syn-image" id="synapse-image">
+                <div class="text" id="synapse-text">
+                    <!--
+                        Text will change from,
+                        Upload Image to
+                        Change Image
+                    -->
+                    Upload Image
+                </div>
+            </label>
+            <input type="file" class="syn-image-input" id="image-upload" accept="image/*">
+            <img src="" alt="uploaded" class="syn-image-uploaded" id="synapse-uploaded-image">
+        </div>
+        <div class="syn-explainer-container">
+            <div class="action-btns">
+                <button class="syn-explainer-container-action-btn" id="analyze-btn">analyze image</button>
+                <button class="syn-explainer-container-action-btn search" id="search-btn">search online</button>
+            </div>
+            <p class="syn-explainer-field" id="explainer-field">
+            </p>
+        </div>
+    </div>
+    <div class="syn-footer">
+        Synapse<b>Vision</b>&nbsp;by Israel Mafabi Emmanuel - Google Gemini.
+    </div>
+    <script src="logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>

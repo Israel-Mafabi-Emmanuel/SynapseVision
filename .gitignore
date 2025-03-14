@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+server/.env
+
+# Logs
+*.log
+*.log.*
+
+# Build artifacts
+dist/
+build/
+*.pyc
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Coverage reports
+coverage/

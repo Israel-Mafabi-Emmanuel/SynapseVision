@@ -1,0 +1,195 @@
+/*
+    GLORY BE TO GOD,
+    Exploitation - Apple Promotion,
+    By Israel Mafabi Emmanuel
+*/
+
+:root {
+    --apple-cool-black: rgb(0, 0, 0);
+    --apple-cool-gray : rgb(134, 134, 139);
+    --apple-cool-gray-: rgb(180, 180, 186);
+    --apple-cool-white: white;
+
+    --apple-default-font: "Poppins", sans-serif;
+}
+
+* {
+    font-family: var(--apple-default-font);
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+
+    transition: 500ms;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--apple-cool-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--apple-cool-white);
+}
+
+
+body {
+    background: var(--apple-cool-black);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 100vw;
+    min-width: 280px;
+    min-height: 100vh;
+
+    .apple-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding-left: 14px;
+        padding-right: 14px;
+
+        pointer-events: none;
+
+        width: 100vw;
+        height: 55px;
+        min-height: 55px;
+
+        .apple-icon {
+            margin-bottom: 3px;
+        }
+
+        .apple-title-text {
+            color: var(--apple-cool-white);
+            font-size: 13.333px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-left: 4px;
+
+            width: fit-content;
+            height: 24px;
+        }
+    }
+
+    .apple-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        gap: 56px;
+        padding: 28px;
+
+        width: 100vw;
+        height: calc(100vh - 105px);
+        min-height: 777px;
+
+        .apple-main-pursuade {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 28px;
+
+            padding: 28px;
+
+            pointer-events: none;
+
+            width: 100vw;
+            height: fit-content;
+
+            .apple-main-title-text {
+                color: var(--apple-cool-gray);
+                font-size: 21px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                margin-top: 14px;
+                margin-bottom: 14px;
+
+                width: 100vw;
+                height: fit-content;
+                min-height: 75px;
+
+                .apple-main-brand {
+                    font-size: 21px;
+                }
+
+                .apple-main-discount {
+                    font-size: 13.333px;
+
+                    s {
+                        color: var(--apple-cool-white);
+                    }
+                }
+            }
+        }
+
+        .apple-main-get-button {
+            background: transparent;
+
+            border: 1px solid var(--apple-cool-gray);
+            border-radius: 14px;
+
+            color: var(--apple-cool-gray);
+            font-size: 13.333px;
+
+            cursor: pointer;
+            
+            margin-bottom: 42px;
+
+            transition: 200ms;
+
+            width: 200px;
+            min-width: 200px;
+            height: 40px;
+            min-height: 40px;
+        }
+
+        .apple-main-get-button:hover {
+            background: var(--apple-cool-gray);
+            color: var(--apple-cool-black);
+        }
+
+        .apple-main-get-button:active {
+            background: var(--apple-cool-gray-);
+            border: 1px solid var(--apple-cool-gray-);
+            color: var(--apple-cool-black);
+        }
+    }
+
+    .apple-footer {
+        color: var(--apple-cool-gray);
+        font-size: 13.333px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        height: 50px;
+        min-height: 50px;
+    }
+}
