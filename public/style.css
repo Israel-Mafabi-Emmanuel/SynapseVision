@@ -11,6 +11,7 @@
     --synapse-cool-white   : white;
 
     --synapse-cool-black-tr: rgba(22, 22, 23, 0.5);
+    --synapse-cool-gray-tr : rgba(104, 104, 104, 0.1);
 
     --synaspe-default-font : "Poppins", sans-serif;
 }
@@ -124,7 +125,7 @@ body {
             }
 
             .custom-upload:hover {
-                /* background: transparent; */
+                background: var(--synapse-cool-gray-tr);
                 border: 1px dashed var(--synapse-cool-white);
                 border-radius: 14px;
             }
@@ -292,7 +293,7 @@ body {
         /* background: var(--synapse-cool-white); */
 
         color: var(--synapse-cool-white);
-        font-size: 13px;
+        font-size: 12px;
 
         display: flex;
         align-items: center;

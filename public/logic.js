@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const response     = document.getElementById('explainer-field');
 
-    function typeWriter(html, element, speed) {
+    function m_print(html, element, speed) {
         let wrapper = document.createElement('div');
         wrapper.style.display = 'none'; // Hide the wrapper
         document.body.appendChild(wrapper); // Append to the body (temporarily)
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const htmlText = marked.parse(markdownText);
                 // response.innerHTML = marked.parse(markdownText);
 
-                typeWriter(htmlText, response, 7)
+                m_print(htmlText, response, 7)
 
                 const searchQuery = extractSearchQuery(data.result);
                 search_btn.searchQuery = searchQuery || ""; // Set to query or empty string
